@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xác Minh Bảo Mật</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+.box {
+    background: rgba(0,0,0,0.6);
+    padding: 40px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+}
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #00c6ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background: #0072ff;
+}
+.loader {
+    display: none;
+    margin-top: 15px;
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+    <h2>🔒 Xác Minh Bảo Mật iOS</h2>
+    <p>Vui lòng xác minh để tiếp tục truy cập.</p>
+    <button onclick="verify()">Tiếp tục</button>
+    <div class="loader" id="loading">Đang xác minh...</div>
+</div>
+
+<script>
+function verify(){
+    document.getElementById("loading").style.display = "block";
+    setTimeout(()=>{
+        alert("Xác minh thành công!");
+    },2000);
+}
+</script>
+
+</body>
+</html>
