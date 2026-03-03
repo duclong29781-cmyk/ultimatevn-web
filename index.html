@@ -44,19 +44,21 @@ button:hover {
 </head>
 <body>
 
-<div class="box">
-    <h2>🔒 Xác Minh Bảo Mật iOS</h2>
-    <p>Vui lòng xác minh để tiếp tục truy cập.</p>
-    <button onclick="verify()">Tiếp tục</button>
-    <div class="loader" id="loading">Đang xác minh...</div>
-</div>
-
+<script>
+function verify(){
+    document.getElementById("loading").style.display = "block";
+    setTimeout(()=>{
+        document.getElementById("loading").style.display = "none";
+        alert("Xác minh thành công!");
+    },100);
+}
+</script>
 <script>
 function verify(){
     document.getElementById("loading").style.display = "block";
     setTimeout(()=>{
         alert("Xác minh thành công!");
-    },2000);
+    },500);
 }
 </script>
 
