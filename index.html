@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Xác Minh Bảo Mật</title>
-
 <style>
 body {
     margin: 0;
@@ -40,16 +39,13 @@ button:hover {
 .loader {
     display: none;
     margin-top: 15px;
-    font-size: 14px;
-    color: #00ffcc;
 }
 </style>
 </head>
-
 <body>
 
 <div class="box">
-    <h2>🔒 Xác Minh Bảo Mật</h2>
+    <h2>🔒 Xác Minh Bảo Mật iOS</h2>
     <p>Vui lòng xác minh để tiếp tục truy cập.</p>
     <button onclick="verify()">Tiếp tục</button>
     <div class="loader" id="loading">Đang xác minh...</div>
@@ -58,11 +54,9 @@ button:hover {
 <script>
 function verify(){
     document.getElementById("loading").style.display = "block";
-    setTimeout(function(){
-        document.getElementById("loading").style.display = "none";
+    setTimeout(()=>{
         alert("Xác minh thành công!");
-    },100); // 0.1 giây (siêu nhanh)
-}
+    },2000); ( (siêu nhanh)}
 </script>
 
 </body>
